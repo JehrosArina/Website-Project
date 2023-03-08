@@ -319,7 +319,7 @@ background-color: bisque;
   padding:0 8%;
 }
 .Blog-content{
-    position:static;
+
   display: flex;
   flex-direction: column  ;
   align-items: flex-start;
@@ -363,7 +363,7 @@ background-color: bisque;
 
 /* MEdia Queries */
 /* min is mo gamay sa 390*/
-@media only screen and (max-width: 600px) 
+@media only screen and (max-width: 390px) 
 {
 
 
@@ -376,13 +376,17 @@ display: flex;
       color:colors.$Blue0266FF;
       font-size: 24px;
 }  
+
   .footer-section{
-  
-    flex-direction: column;
-    width: 500px;
+  display: flex;
+  flex-direction: columns;
+  align-items: center;
+  padding:0;
+  margin:0;
+  width: 500px;
   }
   .header-section{
-    width: 500px;
+    width: 200px;
     flex-direction: column;
   }
 
