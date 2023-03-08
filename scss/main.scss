@@ -26,7 +26,7 @@ body{
 }
 
 .container{
- 
+ /*  $page-width: 1200px;*/
   width:variables.$page-width;
   height:1097px;
   background-color: colors.$FFFFFF;
@@ -304,11 +304,7 @@ background-color: bisque;
 
 /* Footer */
 
-.footer {
-  position:fixed;
-  bottom:0;
-  left:0;
-}
+
 .footer-section{
 
   width:variables.$footer-width;
@@ -366,21 +362,33 @@ background-color: bisque;
 
 
 /* MEdia Queries */
+/* min is mo gamay sa 390*/
+@media only screen and (max-width: 600px) 
+{
 
-@media(max-width: 375px) {
+
 
 #mobile i{
-display: flex; /* to display the hidden cart and bar */   
+display: flex; 
 }
 
 #mobile i{
       color:colors.$Blue0266FF;
       font-size: 24px;
-    
+}  
+  .footer-section{
   
+    flex-direction: column;
+    width: 500px;
+  }
+  .header-section{
+    width: 500px;
+    flex-direction: column;
+  }
+
 }
 
 
-}
+
 
 
