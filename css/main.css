@@ -33,7 +33,6 @@ nav ul li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10px;
 }
 
 .nav-container {
@@ -129,6 +128,7 @@ nav ul li {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   place-items: center;
+  padding-left: 40px;
 }
 
 .container-main .card {
@@ -314,7 +314,7 @@ nav ul li {
 
 /* End of footer */
 /* MEdia Queries */
-@media (max-width: 390px) {
+@media (max-width: 375px) {
   #mobile i {
     display: flex; /* to display the hidden cart and bar */
   }

@@ -50,7 +50,7 @@ nav ul li{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10px;
+
 
 
  
@@ -161,7 +161,9 @@ cursor: pointer;
   margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
   place-items: center;
+  padding-left: 40px;
  
 }
 .container-main .card{
@@ -365,7 +367,7 @@ background-color: bisque;
 
 /* MEdia Queries */
 
-@media(max-width: 390px) {
+@media(max-width: 375px) {
 
 #mobile i{
 display: flex; /* to display the hidden cart and bar */   
@@ -374,6 +376,11 @@ display: flex; /* to display the hidden cart and bar */
 #mobile i{
       color:colors.$Blue0266FF;
       font-size: 24px;
+    
   
 }
+
+
 }
+
+
