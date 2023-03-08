@@ -367,7 +367,6 @@ background-color: bisque;
 {
 
 
-
 #mobile i{
 display: flex; 
 }
@@ -377,20 +376,35 @@ display: flex;
       font-size: 24px;
 }  
 
-  .footer-section{
-  display: flex;
-  flex-direction: columns;
-  align-items: center;
-  padding:0;
-  margin:0;
-  width: 500px;
-  }
-  .header-section{
-    width: 200px;
-    flex-direction: column;
-  }
-
+.header-section{
+  width: 100px;
 }
+
+.nav-container{
+  padding: 0;
+}
+
+.header-section{
+  flex-direction: column;
+}
+
+.container .header-section{
+ width:500px;
+ height: variables.$header-height;
+ background:colors.$darkblue192140;
+}
+.footer-section{
+
+  width:500px;
+  height: variables.$footer-height;
+  background: colors.$darkerBlue10131C;
+}
+}
+ 
+
+  
+
+
 
 
 
