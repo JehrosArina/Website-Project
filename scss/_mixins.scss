@@ -1,0 +1,13 @@
+/* variable for your properties and values */
+@mixin box-shadow() {
+  background: linear-gradient(112.87deg, #c8f2d1, #75c9b7);
+
+  box-shadow: 20px 20px 17px rgba(0, 0, 0, 0.3); /* box shadow has a properties and values x,y blur, spread and color */
+  border-radius: 5px;
+  width: 30rem;
+  height: 35rem;
+}
+
+@mixin backgroundColor($primary_color: #75c9b7, $secondary_color: #c8f2d1) {
+  background: linear-gradient(112.87deg, $secondary_color, $primary_color);
+}
