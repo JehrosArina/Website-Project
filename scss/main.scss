@@ -389,16 +389,28 @@ display: flex;
 }
 
 .container .header-section{
- width:500px;
+ width:400px;
  height: variables.$header-height;
  background:colors.$darkblue192140;
 }
 .footer-section{
-
-  width:500px;
-  height: variables.$footer-height;
+  margin-left: 30px;
+  width:400px;
+  height: 300px;
   background: colors.$darkerBlue10131C;
+  flex-direction: column;
+
 }
+.Blog-content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+ 
+}
+.container-main{
+  padding-right: 10px;
+}
+
 }
  
 
