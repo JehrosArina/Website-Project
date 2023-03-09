@@ -80,7 +80,7 @@ hearicon1.onclick = function(e){
 hearicon2.onclick = function(e){
     
     e.preventDefault();
-     document.getElementById('heart1').style.color = 'blue';
+     document.getElementById('heart2').style.color = 'blue';
      
      }
      
@@ -186,9 +186,8 @@ hearicon9.onclick = function(e){
     e.preventDefault();
      document.getElementById('read9').style.color = 'green';
      
+
 }//===================Hamburger Menu===============//
-
-
 
 const navMenu =document.querySelector('.nav-container');
 const hamburger =document.querySelector('#bar');
