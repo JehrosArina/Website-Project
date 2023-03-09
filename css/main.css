@@ -453,7 +453,7 @@ nav ul li {
   }
 }
 /*ipad small device*/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 421px) and (max-width: 768px) {
   .container .header-section {
     width: 750px;
     height: 84px;
