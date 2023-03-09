@@ -13,8 +13,7 @@
 //   }
 
 *{
-  padding:0;
-  margin:0;
+  @include mixins.padding-margin-default();  /*default padding and margin*/
   box-sizing: border-box;
 }
 body{
@@ -362,10 +361,8 @@ background-color: bisque;
 
 
 /* MEdia Queries */
-
-/* max is mo gamay sa 420 phone devices*/
-/* From 0 to 420 only */
-@media only screen and (max-width: 420px) 
+/* All phone devices */
+@media only screen and (max-width: 480px) 
 {
 
 
@@ -591,25 +588,21 @@ padding-left:10px;
   margin-bottom: 10px;
 }
 .nav-container{
-  margin: 0;
- padding:0; 
+ @include mixins.padding-margin-default();
 }
 .signup-login-container {
-   margin: 0;
-   padding:0; 
+   @include mixins.padding-margin-default();
    padding-right: 10px;
 
 }
 .signup-login-container a {
-   margin: 0;
-   padding:0; 
+    @include mixins.padding-margin-default();
    margin-top: -25px;
 
 }
 
 .signup-login-container .login-btn{
-   margin: 0;
-   padding:0; 
+    @include mixins.padding-margin-default();
    margin-top: -20px;
    
 }
@@ -635,7 +628,7 @@ padding-left:10px;
   
  }
 
-/*ipad larger device * this is the size of my ipad*/ 
+/*ipad  and tablets larger devices */ 
 @media only screen 
 and (min-width : 769px) and (max-width : 1024px) {
 
@@ -648,36 +641,30 @@ and (min-width : 769px) and (max-width : 1024px) {
 
 
 .header-logo{
- margin: 0;
- padding:0; 
+ @include mixins.padding-margin-default();
 }
 
 .header-logo h3{
-  margin: 0;
-  padding:0; 
+   @include mixins.padding-margin-default();
   padding-left: 10px;
   margin-bottom: 10px;
 }
 .nav-container{
-  margin: 0;
- padding:0; 
+  @include mixins.padding-margin-default();
 }
 .signup-login-container {
-   margin: 0;
-   padding:0; 
+   @include mixins.padding-margin-default();
    padding-right: 10px;
 
 }
 .signup-login-container a {
-   margin: 0;
-   padding:0; 
+   @include mixins.padding-margin-default();
    margin-top: -25px;
 
 }
 
 .signup-login-container .login-btn{
-   margin: 0;
-   padding:0; 
+ @include mixins.padding-margin-default();
    margin-top: -20px;
    
 }

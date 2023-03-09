@@ -3,6 +3,7 @@
 * {
   padding: 0;
   margin: 0;
+  /*default padding and margin*/
   box-sizing: border-box;
 }
 
@@ -308,9 +309,8 @@ nav ul li {
 
 /* End of footer */
 /* MEdia Queries */
-/* max is mo gamay sa 420 phone devices*/
-/* From 0 to 420 only */
-@media only screen and (max-width: 420px) {
+/* All phone devices */
+@media only screen and (max-width: 480px) {
   .container {
     flex-direction: column;
     align-items: center;
@@ -475,22 +475,22 @@ nav ul li {
     margin-bottom: 10px;
   }
   .nav-container {
-    margin: 0;
     padding: 0;
+    margin: 0;
   }
   .signup-login-container {
-    margin: 0;
     padding: 0;
+    margin: 0;
     padding-right: 10px;
   }
   .signup-login-container a {
-    margin: 0;
     padding: 0;
+    margin: 0;
     margin-top: -25px;
   }
   .signup-login-container .login-btn {
-    margin: 0;
     padding: 0;
+    margin: 0;
     margin-top: -20px;
   }
   .footer-section {
@@ -512,7 +512,7 @@ nav ul li {
     margin-top: 40px;
   }
 }
-/*ipad larger device * this is the size of my ipad*/
+/*ipad  and tablets larger devices */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .container .header-section {
     width: 800px;
@@ -520,32 +520,32 @@ nav ul li {
     background: #192140;
   }
   .header-logo {
-    margin: 0;
     padding: 0;
+    margin: 0;
   }
   .header-logo h3 {
-    margin: 0;
     padding: 0;
+    margin: 0;
     padding-left: 10px;
     margin-bottom: 10px;
   }
   .nav-container {
-    margin: 0;
     padding: 0;
+    margin: 0;
   }
   .signup-login-container {
-    margin: 0;
     padding: 0;
+    margin: 0;
     padding-right: 10px;
   }
   .signup-login-container a {
-    margin: 0;
     padding: 0;
+    margin: 0;
     margin-top: -25px;
   }
   .signup-login-container .login-btn {
-    margin: 0;
     padding: 0;
+    margin: 0;
     margin-top: -20px;
   }
   .footer-section {
