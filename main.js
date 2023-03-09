@@ -186,4 +186,13 @@ hearicon9.onclick = function(e){
     e.preventDefault();
      document.getElementById('read9').style.color = 'green';
      
-}
+}//===================Hamburger Menu===============//
+
+
+const hamburger =document.querySelector('#bar');
+const navMenu =document.querySelector('.nav-container');
+
+hamburger.addEventListener('click',() =>{
+  hamburger.classList.toggle('active');
+  navMenu.classList.toggle('active');
+})

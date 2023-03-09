@@ -316,9 +316,6 @@ nav ul li {
     width: 100%;
   }
   /* header media queries */
-  .header-section {
-    width: 100%;
-  }
   .container .header-section {
     width: 315px;
     height: 84px;
@@ -327,6 +324,7 @@ nav ul li {
     margin: 0;
     padding: 0;
     margin-left: 25px;
+    position: relative;
   }
   .header-logo {
     padding: 0;
@@ -354,6 +352,38 @@ nav ul li {
     top: -60px;
     left: 120px;
   }
+  /*NAvigation media*/
+  .nav-container.active .nav-links {
+    display: none;
+  }
+  .nav-container {
+    width: 20%;
+    height: 50px;
+    position: absolute;
+    right: 350px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-links ul {
+    width: 10%;
+  }
+  .nav-container .nav-links .list-items a {
+    font-size: 10px;
+    font-weight: 100;
+    line-height: 5px;
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    width: 85px;
+  }
+  #navigation li a.active::after,
+  #navigation li a:hover::after {
+    content: "";
+    width: 20%;
+  }
   /* End of fav icon media */
   /* main content media */
   .container-main {
@@ -363,11 +393,6 @@ nav ul li {
     margin-top: 30px;
   }
   /* End of main media */
-  .nav-container {
-    padding: 0;
-    margin: 0;
-    display: none;
-  }
   .signup-login-container {
     padding: 0;
     margin: 0;

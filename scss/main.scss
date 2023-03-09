@@ -375,11 +375,6 @@ background-color: bisque;
 
 /* header media queries */
 
-.header-section{
- 
- width:100%;
-
-}
 
 .container .header-section{
  width:315px;
@@ -389,9 +384,8 @@ background-color: bisque;
  margin: 0;
  padding:0; 
  margin-left: 25px;
+ position: relative;
 }
-
-
 
 
 .header-logo{
@@ -422,7 +416,57 @@ position: relative;
       margin:0;
       top:-60px;
       left: 120px;
-}  
+}
+
+/*NAvigation media*/
+
+.nav-container.active{ 
+
+      .nav-links{
+        display: none;
+      
+      }    
+   
+}
+
+.nav-container{
+
+ width:20%;
+ height: 50px;
+ position: absolute;
+ right: 350px;
+display: flex;
+justify-content: space-between;
+}
+
+.nav-links ul{
+width: 10%;
+}
+
+.nav-container .nav-links .list-items a{
+
+font-size: 10px;
+font-weight: 100;
+line-height: 5px;
+color: colors.$FFFFFF;
+text-decoration: none;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 100px;
+width: 85px;
+
+
+}
+
+
+#navigation li a.active::after,
+#navigation li a:hover::after{
+    content:"";
+    width:20%;
+
+}
+
 
 /* End of fav icon media */
 
@@ -435,11 +479,7 @@ position: relative;
 }
 
 /* End of main media */
-.nav-container{
-   padding:0;
-  margin:0;
-  display: none;
-}
+
 
 .signup-login-container{
   padding:0;
@@ -510,9 +550,10 @@ margin-top:-30px;
 margin-left: 20px;
 padding-left:10px;
 }
-
-
 }
+
+
+
  
 
   
