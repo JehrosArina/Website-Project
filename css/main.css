@@ -309,6 +309,7 @@ nav ul li {
 /* End of footer */
 /* MEdia Queries */
 /* max is mo gamay sa 420 phone devices*/
+/* From 0 to 420 only */
 @media only screen and (max-width: 420px) {
   .container {
     flex-direction: column;
@@ -451,9 +452,8 @@ nav ul li {
     padding-left: 10px;
   }
 }
-/* TABLETS AND IPADS */
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* header */
+/*ipad small device*/
+@media only screen and (min-width: 768px) {
   .container .header-section {
     width: 750px;
     height: 84px;
@@ -464,35 +464,51 @@ nav ul li {
     justify-content: space-between;
     align-items: center;
   }
-  .header-logo h3 {
+  .header-logo {
+    margin: 0;
     padding: 0;
-    margin-top: -4px;
+  }
+  .header-logo h3 {
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+    margin-bottom: 10px;
   }
   .nav-container {
-    padding: 0;
     margin: 0;
+    padding: 0;
   }
   .signup-login-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    margin: 0;
+    padding: 0;
+    padding-right: 10px;
   }
-  /*Footer*/
+  .signup-login-container a {
+    margin: 0;
+    padding: 0;
+    margin-top: -25px;
+  }
+  .signup-login-container .login-btn {
+    margin: 0;
+    padding: 0;
+    margin-top: -20px;
+  }
   .footer-section {
-    width: 430px;
-    height: 400px;
+    width: 750px;
+    height: 450px;
     display: flex;
     flex-direction: column;
     padding: 0;
+    margin: 0;
   }
   .Blog-content {
-    margin-top: 30px;
-    padding-left: 30px;
+    width: 100%;
+    padding-top: 50px;
+    padding-left: 50px;
   }
   .follow-us {
-    padding: 0;
-    margin: 0;
     width: 100%;
-    padding-left: 20px;
+    padding-left: 40px;
+    margin-top: 40px;
   }
 }/*# sourceMappingURL=main.css.map */
