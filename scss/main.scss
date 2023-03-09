@@ -362,9 +362,11 @@ background-color: bisque;
 
 
 /* MEdia Queries */
-/* min is mo gamay sa 390*/
-@media only screen and (max-width: 320px) 
+/* max is mo gamay sa 420*/
+@media only screen and (max-width: 420px) 
 {
+
+
 
 .container{
   flex-direction: column;
@@ -398,7 +400,7 @@ background-color: bisque;
 position: absolute ;
 padding:0;
 margin:0;
-left:30px;
+left:17px;
 }
 
 /* fav Icon media */
@@ -418,6 +420,7 @@ position: relative;
       left: 120px;
 }
 
+
 /*NAvigation media*/
 
 .nav-container.active{ 
@@ -428,6 +431,7 @@ position: relative;
       }    
    
 }
+
 
 .nav-container{
 
@@ -454,7 +458,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 margin-top: 100px;
-width: 85px;
+width: 50px;
 
 
 }
@@ -463,11 +467,15 @@ width: 85px;
 #navigation li a.active::after,
 #navigation li a:hover::after{
     content:"";
-    width:20%;
+    width:40%;
 
 }
 
 
+
+.nav-links ul{
+width: 10%;
+}
 /* End of fav icon media */
 
 /* main content media */

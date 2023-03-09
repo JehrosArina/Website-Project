@@ -189,10 +189,12 @@ hearicon9.onclick = function(e){
 }//===================Hamburger Menu===============//
 
 
-const hamburger =document.querySelector('#bar');
-const navMenu =document.querySelector('.nav-container');
 
+const navMenu =document.querySelector('.nav-container');
+const hamburger =document.querySelector('#bar');
 hamburger.addEventListener('click',() =>{
   hamburger.classList.toggle('active');
   navMenu.classList.toggle('active');
+
+ 
 })
