@@ -71,57 +71,144 @@ const hearicon9 = document.getElementById('heart9');
 
 
 
+let isItClick1 = false;
 hearicon1.onclick = function(e){
-      e.preventDefault();
-        document.getElementById('heart1').style.color = 'blue';
-}
+    e.preventDefault();
+      if(isItClick1){
+        //    document.getElementById('h1').innerHTML= 'red';
+                   document.getElementById('heart1').style.color= 'red';
+                   isItClick1 = false;
+      }else{
+        // document.getElementById('h1').innerHTML= 'blue';
+              document.getElementById('heart1').style.color= 'gray';
+             isItClick1 = true;
+      } 
+   
+    }
+     
 
 
 hearicon2.onclick = function(e){
-    
     e.preventDefault();
-     document.getElementById('heart2').style.color = 'blue';
-     
-     }
+      if(isItClick1){
+        //    document.getElementById('h1').innerHTML= 'red';
+                   document.getElementById('heart2').style.color= 'red';
+                   isItClick1 = false;
+      }else{
+        // document.getElementById('h1').innerHTML= 'blue';
+              document.getElementById('heart2').style.color= 'gray';
+             isItClick1 = true;
+      } 
+   
+    }
      
     
+
 
 hearicon3.onclick = function(e){
     e.preventDefault();
-     document.getElementById('heart3').style.color = 'blue';
-     
-}
+      if(isItClick1){
+        //    document.getElementById('h1').innerHTML= 'red';
+                   document.getElementById('heart3').style.color= 'red';
+                   isItClick1 = false;
+      }else{
+        // document.getElementById('h1').innerHTML= 'blue';
+              document.getElementById('heart3').style.color= 'gray';
+             isItClick1 = true;
+      } 
+   
+    }
+
+
+
 hearicon4.onclick = function(e){
     e.preventDefault();
-     document.getElementById('heart4').style.color = 'blue';
-     
-}
+      if(isItClick1){
+        //    document.getElementById('h1').innerHTML= 'red';
+                   document.getElementById('heart4').style.color= 'red';
+                   isItClick1 = false;
+      }else{
+        // document.getElementById('h1').innerHTML= 'blue';
+              document.getElementById('heart4').style.color= 'gray';
+             isItClick1 = true;
+      } 
+   
+    }
+
+
 hearicon5.onclick = function(e){
     e.preventDefault();
-     document.getElementById('heart5').style.color = 'blue';
-     
-}
+      if(isItClick1){
+        //    document.getElementById('h1').innerHTML= 'red';
+                   document.getElementById('heart5').style.color= 'red';
+                   isItClick1 = false;
+      }else{
+        // document.getElementById('h1').innerHTML= 'blue';
+              document.getElementById('heart5').style.color= 'gray';
+             isItClick1 = true;
+      } 
+   
+    }
+
+
+
 hearicon6.onclick = function(e){
     e.preventDefault();
-     document.getElementById('heart6').style.color = 'blue';
-     
-}
+      if(isItClick1){
+        //    document.getElementById('h1').innerHTML= 'red';
+                   document.getElementById('heart6').style.color= 'red';
+                   isItClick1 = false;
+      }else{
+        // document.getElementById('h1').innerHTML= 'blue';
+              document.getElementById('heart6').style.color= 'gray';
+             isItClick1 = true;
+      } 
+   
+    }
+
+
 hearicon7.onclick = function(e){
     e.preventDefault();
-     document.getElementById('heart7').style.color = 'blue';
-     
-}
+      if(isItClick1){
+        //    document.getElementById('h1').innerHTML= 'red';
+                   document.getElementById('heart7').style.color= 'red';
+                   isItClick1 = false;
+      }else{
+        // document.getElementById('h1').innerHTML= 'blue';
+              document.getElementById('heart7').style.color= 'gray';
+             isItClick1 = true;
+      } 
+   
+    }
+
 hearicon8.onclick = function(e){
     e.preventDefault();
-     document.getElementById('heart8').style.color = 'blue';
-     
-}
+      if(isItClick1){
+        //    document.getElementById('h1').innerHTML= 'red';
+                   document.getElementById('heart8').style.color= 'red';
+                   isItClick1 = false;
+      }else{
+        // document.getElementById('h1').innerHTML= 'blue';
+              document.getElementById('heart8').style.color= 'gray';
+             isItClick1 = true;
+      } 
+   
+    }
+
+
 hearicon9.onclick = function(e){
     e.preventDefault();
-     document.getElementById('heart9').style.color = 'blue';
-     
-}
-
+      if(isItClick1){
+        //    document.getElementById('h1').innerHTML= 'red';
+                   document.getElementById('heart9').style.color= 'red';
+                   isItClick1 = false;
+      }else{
+        // document.getElementById('h1').innerHTML= 'blue';
+              document.getElementById('heart9').style.color= 'gray';
+             isItClick1 = true;
+      } 
+   
+    }
 
       //===============Read functionality================================//
 
@@ -133,7 +220,7 @@ hearicon9.onclick = function(e){
                                     const read6 = document.getElementById('read6');
                                           const read7 = document.getElementById('read7');
                                                 const read8 = document.getElementById('read8');
-                                                      const read9 = document.getElementById('read9');
+                                             const read9 = document.getElementById('read9');
 
      read1.onclick = function(e){
     e.preventDefault();
@@ -186,8 +273,10 @@ hearicon9.onclick = function(e){
     e.preventDefault();
      document.getElementById('read9').style.color = 'green';
      
+}
 
-}//===================Hamburger Menu===============//
+
+//===================Hamburger Menu===============//
 
 const navMenu =document.querySelector('.nav-container');
 const hamburger =document.querySelector('#bar');
@@ -197,3 +286,5 @@ hamburger.addEventListener('click',() =>{
 
  
 })
+
+
