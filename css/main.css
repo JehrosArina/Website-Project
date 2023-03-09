@@ -511,4 +511,56 @@ nav ul li {
     padding-left: 40px;
     margin-top: 40px;
   }
+}
+/*ipad larger device * this is the size of my ipad*/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .container .header-section {
+    width: 800px;
+    height: 84px;
+    background: #192140;
+  }
+  .header-logo {
+    margin: 0;
+    padding: 0;
+  }
+  .header-logo h3 {
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+    margin-bottom: 10px;
+  }
+  .nav-container {
+    margin: 0;
+    padding: 0;
+  }
+  .signup-login-container {
+    margin: 0;
+    padding: 0;
+    padding-right: 10px;
+  }
+  .signup-login-container a {
+    margin: 0;
+    padding: 0;
+    margin-top: -25px;
+  }
+  .signup-login-container .login-btn {
+    margin: 0;
+    padding: 0;
+    margin-top: -20px;
+  }
+  .footer-section {
+    width: 800px;
+    height: 450px;
+    flex-direction: column;
+  }
+  .Blog-content {
+    width: 100%;
+    padding-top: 50px;
+    padding-left: 10px;
+  }
+  .follow-us {
+    width: 100%;
+    padding-left: 10px;
+    margin-top: 40px;
+  }
 }/*# sourceMappingURL=main.css.map */
