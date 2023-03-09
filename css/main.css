@@ -309,31 +309,75 @@ nav ul li {
 /* End of footer */
 /* MEdia Queries */
 /* min is mo gamay sa 390*/
-@media only screen and (max-width: 390px) {
-  #mobile i {
-    display: flex;
-  }
-  #mobile i {
-    color: #0266FF;
-    font-size: 24px;
-  }
-  .header-section {
-    width: 100px;
-  }
-  .header-section {
+@media only screen and (max-width: 320px) {
+  .container {
     flex-direction: column;
-    margin-left: 100px;
+    align-items: center;
+    width: 100%;
+  }
+  /* header media queries */
+  .header-section {
+    width: 100%;
   }
   .container .header-section {
-    width: 365px;
+    width: 315px;
     height: 84px;
     background: #192140;
-  }
-  .footer-section {
-    margin-left: 40px;
-    width: 335px;
-    height: 400px;
+    flex-direction: column;
+    margin: 0;
     padding: 0;
+    margin-left: 25px;
+  }
+  .header-logo {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 100%;
+  }
+  .header-logo h3 {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left: 30px;
+  }
+  /* fav Icon media */
+  #mobile {
+    position: relative;
+  }
+  #mobile i {
+    display: flex;
+    position: absolute;
+    color: #0266FF;
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+    top: -60px;
+    left: 120px;
+  }
+  /* End of fav icon media */
+  /* main content media */
+  .container-main {
+    width: 365px;
+    padding: 0;
+    margin: 0;
+    margin-top: 30px;
+  }
+  /* End of main media */
+  .nav-container {
+    padding: 0;
+    margin: 0;
+    display: none;
+  }
+  .signup-login-container {
+    padding: 0;
+    margin: 0;
+    display: none;
+  }
+  /* Fotter media Queries */
+  .footer-section {
+    margin-left: 30px;
+    width: 315px;
+    height: 400px;
     background: #10131C;
     flex-direction: column;
   }
@@ -343,15 +387,26 @@ nav ul li {
     align-items: flex-start;
     margin-top: 20px;
     padding: 0;
-    padding-left: 30px;
-    width: 350px;
+    width: 100%;
+  }
+  .Blog-content h3 {
+    padding-left: 10px;
+  }
+  .Blog-content .content-details {
+    padding-left: 10px;
+  }
+  .courses-list {
+    padding-left: 10px;
+  }
+  .fav-links {
+    padding-left: 10px;
   }
   .follow-us {
     width: 320px;
   }
   .follow-us .follows {
-    padding-left: 20px;
-    margin-top: 30px;
+    padding-left: 35px;
+    margin-top: 20px;
   }
   .follow-us p {
     font-size: 10px;
@@ -362,28 +417,9 @@ nav ul li {
   .fav-links i {
     padding: 0;
   }
-  .container {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .container-main {
-    padding-right: 120px;
-  }
   .disclaimers {
-    padding-left: 30px;
-  }
-  .header-section {
-    padding: 0;
-    margin: 0;
-    width: 335px;
-  }
-  .header-logo {
-    padding: 0;
-    margin: 0;
-  }
-  .nav-container {
-    padding: 0;
-    margin: 0;
+    margin-top: -30px;
+    margin-left: 20px;
+    padding-left: 10px;
   }
 }/*# sourceMappingURL=main.css.map */
