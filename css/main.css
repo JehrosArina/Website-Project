@@ -320,21 +320,19 @@ nav ul li {
   .header-section {
     width: 100px;
   }
-  .nav-container {
-    padding: 0;
-  }
   .header-section {
     flex-direction: column;
+    margin-left: 100px;
   }
   .container .header-section {
-    width: 400px;
+    width: 350px;
     height: 84px;
     background: #192140;
   }
   .footer-section {
     margin-left: 30px;
-    width: 400px;
-    height: 300px;
+    width: 380px;
+    height: 400px;
     background: #10131C;
     flex-direction: column;
   }
@@ -342,8 +340,26 @@ nav ul li {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    margin-top: 20px;
+    padding-left: 30px;
   }
-  .container-main {
-    padding-right: 10px;
+  .follow-us .follows {
+    padding-left: 10px;
+    margin-top: 30px;
+  }
+  .follow-us p {
+    margin-top: -30px;
+    font-size: 10px;
+  }
+  .fav-links a {
+    padding-left: 10px;
+  }
+  .fav-links i {
+    padding: 0;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }/*# sourceMappingURL=main.css.map */

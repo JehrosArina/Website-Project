@@ -67,17 +67,25 @@ const hearicon6 = document.getElementById('heart6');
 const hearicon7 = document.getElementById('heart7');
 const hearicon8 = document.getElementById('heart8');
 const hearicon9 = document.getElementById('heart9');
+ 
+
+
 
 hearicon1.onclick = function(e){
+      e.preventDefault();
+        document.getElementById('heart1').style.color = 'blue';
+}
+
+
+hearicon2.onclick = function(e){
+    
     e.preventDefault();
      document.getElementById('heart1').style.color = 'blue';
      
-}
-hearicon2.onclick = function(e){
-    e.preventDefault();
-     document.getElementById('heart2').style.color = 'blue';
+     }
      
-}
+    
+
 hearicon3.onclick = function(e){
     e.preventDefault();
      document.getElementById('heart3').style.color = 'blue';
