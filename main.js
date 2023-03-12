@@ -209,6 +209,7 @@ const read9 = document.getElementById('read9');
      read1.onclick = function(e){
     e.preventDefault();
      document.getElementById('read1').style.color = 'green';
+
      
 }
 
@@ -234,6 +235,7 @@ const read9 = document.getElementById('read9');
   read5.onclick = function(e){
     e.preventDefault();
      document.getElementById('read5').style.color = 'green';
+
      
 }
 

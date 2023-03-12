@@ -228,14 +228,18 @@ span{
 
 .read{
   position: absolute;
-    top:20px;
+    top:10px;
     left: -70px;
     display: none;
+  font-size: 20px;
   }
 
   .list-items:hover .read{
-    top:9px;
+    top:1px;
+    left:-30px;
     display: block;
+    
+  
   }
 
 
