@@ -136,6 +136,7 @@ img{
   display: grid;
   grid-template-columns:repeat(3, 1fr); /* repeat(4, 1fr) it will be displayed 4 items in one column */
   place-items: center;
+
   gap: 50px;
   
 }
@@ -162,11 +163,13 @@ span{
   font-weight: 800;
   padding-left: 10px;
   display: none;
+
 }
 
 .list-items:hover span{
   display: block;
   font-weight: 900;
+  cursor: pointer;
 
   
   
@@ -374,7 +377,7 @@ position: absolute;
 
 main ol{
   display: grid;
-  grid-template-columns:repeat(1, 1fr); /* repeat(4, 1fr) it will be displayed 4 items in one column */
+  grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); /* repeat(4, 1fr) it will be displayed 4 items in one column */
   place-items: center;
   gap: 50px;
   padding-right: 25px;
