@@ -115,7 +115,7 @@ img {
 
 /* End of Navigation design */
 /*  MAIN STYLE */
-main ol {
+ol {
   padding-top: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* repeat(4, 1fr) it will be displayed 4 items in one column */
@@ -287,7 +287,7 @@ span {
     height: 100vh;
     width: 220px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-    padding: 90px 0 0 20px; /* navlinks to slide */
+    padding: 90px 0 0 20px;
     transition: 0.4s;
   }
   #header {
@@ -336,7 +336,7 @@ span {
     font-weight: 200;
     font-size: 24px;
     cursor: pointer;
-    display: initial; /* display flex*/
+    display: initial;
     color: #0266FF;
   }
   .container #header {
