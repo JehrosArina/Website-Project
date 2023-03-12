@@ -44,9 +44,6 @@ a {
   color: #DCF10D;
   font-size: 26px;
 }
-#header a {
-  text-decoration: none;
-}
 
 #mobile {
   display: none;
@@ -295,7 +292,8 @@ span {
     height: 70px;
   }
   #header h1 {
-    left: 25px;
+    left: 35px;
+    top: 20px;
     position: absolute;
   }
   #nav-bar li {
