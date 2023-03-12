@@ -304,14 +304,11 @@ span {
     z-index: 3;
     right: 0px;
   }
-  .main-container {
-    display: grid;
-  }
   main ol {
     display: grid;
     grid-template-columns: repeat(1, 1fr); /* repeat(4, 1fr) it will be displayed 4 items in one column */
     place-items: center;
-    gap: 10px;
+    gap: 50px;
     padding-right: 25px;
   }
   #mobile {
