@@ -271,7 +271,7 @@ span {
 
 /* End of footer */
 /* Media Queries */
-/* From 480px down to lower pixel size */
+/* From 480px down to lower pixel size - only for mobile devices*/
 @media (max-width: 480px) {
   /* navigation bar */
   #nav-bar {
@@ -283,7 +283,7 @@ span {
     top: 0;
     right: -300px;
     background: #192140;
-    height: 511vh;
+    height: 100vh;
     width: 220px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
     padding: 90px 0 0 20px; /* navlinks to slide */
