@@ -23,13 +23,18 @@ body{
 
 .container{
     display: flex;
-   flex-direction: column;
+   flex-direction: column;  // display header, main and footer in column
    align-items: center;
    position: relative;
 }
 
 a{
-  text-decoration: none;
+  text-decoration: none;  // declared globally to all "a" set to undeline
+}
+
+
+ol{
+  list-style-type: none;  // declared globally to all "a" set to undeline
 }
 
 /* header start */
@@ -53,22 +58,17 @@ a{
     h1{
         color: colors.$YellowDCF10D;
         font-size: 26px;
-    
         
     }
  
 }
 #mobile{
-    display: none;
+    display: none;  //hide the favCons in desktop display
 }
 #close{
-    display: none;
+    display: none;  //hide the favCons in desktop display
 }
 
-img{
-    width:100px;
-    height: 80px;
-}
 
 #nav-bar{
     display: flex;
@@ -84,12 +84,11 @@ img{
 }
 
 #nav-bar a{
-    text-decoration: none;
+    
     font-size: 16px;
     font-weight: 500;
     color:colors.$FFFFFF;
  
-    text-decoration: none;
 }
 
 .container #header #sign-up{
@@ -130,7 +129,6 @@ img{
 /*  MAIN STYLE */
 
 
-
  ol{
   padding-top: 20px;
   display: grid;
@@ -139,12 +137,6 @@ img{
 
   gap: 50px;
   
-}
-
-
-
-ol{
-  list-style-type: none;
 }
 
  
@@ -401,12 +393,7 @@ top:20px;
   
 }
 
-#mobile #mobile-cart{
-    color:#1a1a1a;
-    font-size: 24px;
-    padding-right:10px;
 
-}
 #close{
     position:absolute; //set the fav icon to a position absolute so I can change the position since the container is set to a position relative
    top:-330px;

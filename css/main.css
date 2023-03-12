@@ -28,6 +28,10 @@ a {
   text-decoration: none;
 }
 
+ol {
+  list-style-type: none;
+}
+
 /* header start */
 .container #header {
   display: flex;
@@ -53,11 +57,6 @@ a {
   display: none;
 }
 
-img {
-  width: 100px;
-  height: 80px;
-}
-
 #nav-bar {
   display: flex;
   justify-content: center;
@@ -71,11 +70,9 @@ img {
 }
 
 #nav-bar a {
-  text-decoration: none;
   font-size: 16px;
   font-weight: 500;
   color: #ffffff;
-  text-decoration: none;
 }
 
 .container #header #sign-up {
@@ -118,10 +115,6 @@ ol {
   grid-template-columns: repeat(3, 1fr); /* repeat(4, 1fr) it will be displayed 4 items in one column */
   place-items: center;
   gap: 50px;
-}
-
-ol {
-  list-style-type: none;
 }
 
 .list-items {
@@ -319,11 +312,6 @@ span {
   #mobile i {
     color: #0266FF;
     font-size: 24px;
-  }
-  #mobile #mobile-cart {
-    color: #1a1a1a;
-    font-size: 24px;
-    padding-right: 10px;
   }
   #close {
     position: absolute;
