@@ -1,78 +1,61 @@
+// Navigation bar //
 
-//Set an id to each div container for Removing each element card //
-const card1 = document.getElementById("card-1-parent");
-const closeBtn1 = document.getElementById("icon-1")
-const card2 = document.getElementById("card-2-parent");
-const closeBtn2 = document.getElementById("icon-2")
-const card3 = document.getElementById("card-3-parent");
-const closeBtn3 = document.getElementById("icon-3")
-const card4 = document.getElementById("card-4-parent");
-const closeBtn4 = document.getElementById("icon-4")
-const card5 = document.getElementById("card-5-parent");
-const closeBtn5 = document.getElementById("icon-5")
-const card6 = document.getElementById("card-6-parent");
-const closeBtn6 = document.getElementById("icon-6")
-const card7 = document.getElementById("card-7-parent");
-const closeBtn7 = document.getElementById("icon-7")
-const card8 = document.getElementById("card-8-parent");
-const closeBtn8 = document.getElementById("icon-8")
-const card9 = document.getElementById("card-9-parent");
-const closeBtn9 = document.getElementById("icon-9")
+const nav = document.getElementById('nav-bar');
+const close = document.getElementById('close');
+const bar = document.getElementById('bar');
 
-     closeBtn1.addEventListener('click', () => {
-     card1.remove();
-      });
+//click the bar
 
-     closeBtn2.addEventListener('click', () => {
-     card2.remove();
-      });
+if(bar){
 
-      closeBtn3.addEventListener('click', () => {
-     card3.remove();
-      });
+    bar.addEventListener('click', () =>{
+    nav.classList.add('active'); 
+    })
+    }
 
-      closeBtn4.addEventListener('click', () => {
-     card4.remove();
-      });
+// close the bar
+    
+if(close){
 
-      closeBtn5.addEventListener('click', () => {
-     card5.remove();
-      });
+    close.addEventListener('click', () =>{
+    nav.classList.remove('active'); 
+    })
+    }
 
-      closeBtn6.addEventListener('click', () => {
-     card6.remove();
-      });
+    
 
-      
-      closeBtn7.addEventListener('click', () => {
-     card7.remove();
-      });
-      
-      closeBtn8.addEventListener('click', () => {
-     card8.remove();
-      });
-      
-      closeBtn9.addEventListener('click', () => {
-     card9.remove();
-      });
-
-      //===============Heart functionality================================//
-      
-const hearicon1 = document.getElementById('heart1');
-const hearicon2 = document.getElementById('heart2');
-const hearicon3 = document.getElementById('heart3');
-const hearicon4 = document.getElementById('heart4');
-const hearicon5 = document.getElementById('heart5');
-const hearicon6 = document.getElementById('heart6');
-const hearicon7 = document.getElementById('heart7');
-const hearicon8 = document.getElementById('heart8');
-const hearicon9 = document.getElementById('heart9');
+    //  MAIN NFUNCTIONALITY //
  
+let ol = document.querySelector('ol');
+
+ol.addEventListener('click',function(e){
+    if(e.target.className == "remove"){ // only select element which has class name 'remove'
+    let length = document.querySelectorAll('.remove').length;
+    if(length > 0){ //ignore to remove all list
+    let remove = e.target.parentNode;
+    remove.parentNode.removeChild(remove);
+    }
+    }
+});
 
 
+
+// Heart Functionality //
+
+const hearIcon1 = document.getElementById('heart1');
+const hearIcon2 = document.getElementById('heart2'); 
+const hearIcon3 = document.getElementById('heart3'); 
+const hearIcon4 = document.getElementById('heart4'); 
+const hearIcon5 = document.getElementById('heart5'); 
+const hearIcon6 = document.getElementById('heart6'); 
+const hearIcon7 = document.getElementById('heart7'); 
+const hearIcon8 = document.getElementById('heart8'); 
+const hearIcon9 = document.getElementById('heart9'); 
 
 let isItClick1 = false;
-hearicon1.onclick = function(e){
+
+
+hearIcon1.onclick = function(e){
     e.preventDefault();
       if(isItClick1){
         //    document.getElementById('h1').innerHTML= 'red';
@@ -88,7 +71,7 @@ hearicon1.onclick = function(e){
      
 
 
-hearicon2.onclick = function(e){
+hearIcon2.onclick = function(e){
     e.preventDefault();
       if(isItClick1){
         //    document.getElementById('h1').innerHTML= 'red';
@@ -101,11 +84,8 @@ hearicon2.onclick = function(e){
       } 
    
     }
-     
-    
 
-
-hearicon3.onclick = function(e){
+    hearIcon3.onclick = function(e){
     e.preventDefault();
       if(isItClick1){
         //    document.getElementById('h1').innerHTML= 'red';
@@ -118,10 +98,9 @@ hearicon3.onclick = function(e){
       } 
    
     }
+     
 
-
-
-hearicon4.onclick = function(e){
+    hearIcon4.onclick = function(e){
     e.preventDefault();
       if(isItClick1){
         //    document.getElementById('h1').innerHTML= 'red';
@@ -135,8 +114,7 @@ hearicon4.onclick = function(e){
    
     }
 
-
-hearicon5.onclick = function(e){
+    hearIcon5.onclick = function(e){
     e.preventDefault();
       if(isItClick1){
         //    document.getElementById('h1').innerHTML= 'red';
@@ -149,10 +127,9 @@ hearicon5.onclick = function(e){
       } 
    
     }
+     
 
-
-
-hearicon6.onclick = function(e){
+    hearIcon6.onclick = function(e){
     e.preventDefault();
       if(isItClick1){
         //    document.getElementById('h1').innerHTML= 'red';
@@ -167,7 +144,7 @@ hearicon6.onclick = function(e){
     }
 
 
-hearicon7.onclick = function(e){
+    hearIcon7.onclick = function(e){
     e.preventDefault();
       if(isItClick1){
         //    document.getElementById('h1').innerHTML= 'red';
@@ -181,7 +158,8 @@ hearicon7.onclick = function(e){
    
     }
 
-hearicon8.onclick = function(e){
+
+    hearIcon8.onclick = function(e){
     e.preventDefault();
       if(isItClick1){
         //    document.getElementById('h1').innerHTML= 'red';
@@ -196,7 +174,7 @@ hearicon8.onclick = function(e){
     }
 
 
-hearicon9.onclick = function(e){
+    hearIcon9.onclick = function(e){
     e.preventDefault();
       if(isItClick1){
         //    document.getElementById('h1').innerHTML= 'red';
@@ -210,17 +188,23 @@ hearicon9.onclick = function(e){
    
     }
 
-      //===============Read functionality================================//
 
-      const read1 = document.getElementById('read1');
-            const read2 = document.getElementById('read2');
-                  const read3 = document.getElementById('read3');
-                        const read4 = document.getElementById('read4');
-                              const read5 = document.getElementById('read5');
-                                    const read6 = document.getElementById('read6');
-                                          const read7 = document.getElementById('read7');
-                                                const read8 = document.getElementById('read8');
-                                             const read9 = document.getElementById('read9');
+    // READ FUNCTIONALITY  //
+
+    
+
+
+
+const read1 = document.getElementById('read1');
+const read2 = document.getElementById('read2');
+const read3 = document.getElementById('read3');
+const read4 = document.getElementById('read4');
+const read5 = document.getElementById('read5');
+const read6 = document.getElementById('read6');
+const read7 = document.getElementById('read7');
+const read8 = document.getElementById('read8');
+const read9 = document.getElementById('read9');
+
 
      read1.onclick = function(e){
     e.preventDefault();
@@ -228,16 +212,18 @@ hearicon9.onclick = function(e){
      
 }
 
-  read2.onclick = function(e){
+    read2.onclick = function(e){
     e.preventDefault();
      document.getElementById('read2').style.color = 'green';
      
 }
+
   read3.onclick = function(e){
     e.preventDefault();
      document.getElementById('read3').style.color = 'green';
      
 }
+
 
   read4.onclick = function(e){
     e.preventDefault();
@@ -276,15 +262,11 @@ hearicon9.onclick = function(e){
 }
 
 
-//===================Hamburger Menu===============//
 
-const navMenu =document.querySelector('.nav-container');
-const hamburger =document.querySelector('#bar');
-hamburger.addEventListener('click',() =>{
-  hamburger.classList.toggle('active');
-  navMenu.classList.toggle('active');
-
- 
-})
-
-
+     
+     
+     
+     
+     
+     
+    
