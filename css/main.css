@@ -115,26 +115,16 @@ img {
 
 /* End of Navigation design */
 /*  MAIN STYLE */
-.main-container {
-  height: 100px;
-  width: 100%;
-  margin-top: 40px;
-}
-
 main ol {
+  padding-top: 20px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(3, 1fr); /* repeat(4, 1fr) it will be displayed 4 items in one column */
   place-items: center;
-  gap: 10px;
-  margin-bottom: 50px;
+  gap: 50px;
 }
 
 ol {
   list-style-type: none;
-}
-
-main ol li {
-  margin-bottom: 40px;
 }
 
 .list-items {
@@ -216,6 +206,7 @@ span {
 
 .read i {
   font-size: 20px;
+  color: #9D9DB5;
 }
 
 .list-items:hover .read {
@@ -237,7 +228,7 @@ span {
   justify-content: space-between;
   align-items: center;
   padding: 0 8%;
-  margin-top: 50%;
+  margin-top: 5%;
 }
 
 .Blog-content {
@@ -313,6 +304,9 @@ span {
     z-index: 3;
     right: 0px;
   }
+  .main-container {
+    display: grid;
+  }
   main ol {
     display: grid;
     grid-template-columns: repeat(1, 1fr); /* repeat(4, 1fr) it will be displayed 4 items in one column */
@@ -353,7 +347,7 @@ span {
     flex-direction: column;
     align-items: center;
     width: 350px;
-    margin-top: 120rem;
+    margin-top: 3rem;
     height: 450px;
     background-color: #10131C;
   }

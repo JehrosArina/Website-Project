@@ -129,26 +129,23 @@ img{
 
 /*  MAIN STYLE */
 .main-container{
-  height: 100px;
-  width: 100%;
-  margin-top: 40px;
+ 
 }
 main ol{
+  padding-top: 20px;
   display: grid;
-  // grid-template-columns:repeat(3, 1fr); /* repeat(4, 1fr) it will be displayed 4 items in one column */
-     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+   grid-template-columns:repeat(3, 1fr); /* repeat(4, 1fr) it will be displayed 4 items in one column */
+  //  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   place-items: center;
- gap: 10px;
-  margin-bottom: 50px;
+  gap: 50px;
+
+  
 }
 
 ol{
   list-style-type: none;
 }
 
-main ol li{
-  margin-bottom:40px;
-}
  
 .list-items{
   position: relative;
@@ -245,12 +242,14 @@ span{
 
   .read i{
      font-size: 20px;
+     color: colors.$darkGray9D9DB5;
   }
 
   .list-items:hover .read{
     top:6px;
     left:-30px;
     display: block;
+   
     
   
   }
@@ -276,7 +275,7 @@ span{
   justify-content: space-between;
   align-items: center;
   padding:0 8%;
-  margin-top: 50%;
+  margin-top: 5%;
 }
 .Blog-content{
 
@@ -371,13 +370,17 @@ position: absolute;
      right: 0px;
 }
 
+.main-container{
+  display: grid;
+}
+
 main ol{
   display: grid;
   grid-template-columns:repeat(1, 1fr); /* repeat(4, 1fr) it will be displayed 4 items in one column */
- 
   place-items: center;
   gap: 10px;
   padding-right: 25px;
+
 
   
 }
@@ -432,7 +435,7 @@ top:20px;
   flex-direction: column;
   align-items: center;
   width: 350px;
-  margin-top:120rem;
+  margin-top:3rem;
   height: 450px;
      background-color: colors.$darkerBlue10131C;
 }
