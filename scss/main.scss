@@ -272,6 +272,7 @@ span{
   padding:0 8%;
   margin-top: 5%;
 }
+
 .Blog-content{
 
   display: flex;
@@ -320,6 +321,12 @@ span{
 /* From 480px down to lower pixel size - only for mobile devices*/
 @media(max-width: 480px) {
     
+
+.container #header{   // set the width of the header container
+   width: 400px;
+
+
+}
 
     /* navigation bar */
 
@@ -381,7 +388,7 @@ main ol{
 
 
 #mobile{
-display: flex; /* to display the hidden cart and bar */   
+display: flex; /* to display the hidden  bar */   
 position: absolute;  //set the fav icon to a position absolute so I can change the position since the container is set to a position relative
 right: 20px;
 top:20px;
@@ -406,18 +413,11 @@ top:20px;
    
   
 }
- 
 
 
 
 
-
-.container #header{
-   width: 400px;
-
-
-}
-
+/* Footer media */
 
 .container .footer-section{
   display: flex;
