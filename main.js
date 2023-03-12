@@ -206,10 +206,11 @@ const read8 = document.getElementById('read8');
 const read9 = document.getElementById('read9');
 
 
+let isCheckClick = false;
      read1.onclick = function(e){
     e.preventDefault();
+    
      document.getElementById('read1').style.color = 'green';
-
      
 }
 

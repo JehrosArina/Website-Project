@@ -146,7 +146,7 @@ main ol li {
 
 span {
   position: absolute;
-  color: red;
+  color: #10131C;
   font-weight: 800;
   padding-left: 10px;
   display: none;
@@ -196,10 +196,15 @@ span {
   cursor: pointer;
 }
 
+.fav-heart i {
+  font-size: 15px;
+}
+
 .status {
   position: absolute;
   top: -10px;
   left: 5px;
+  padding-left: 4px;
 }
 
 .read {
@@ -207,11 +212,14 @@ span {
   top: 10px;
   left: -70px;
   display: none;
+}
+
+.read i {
   font-size: 20px;
 }
 
 .list-items:hover .read {
-  top: 1px;
+  top: 6px;
   left: -30px;
   display: block;
 }
